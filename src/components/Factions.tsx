@@ -31,7 +31,7 @@ export default function Factions() {
           <div className="hidden md:block">
             <div className="text-right">
               <div className="text-4xl font-black text-white/5 tracking-tighter mb-2">TREMOR RP</div>
-              <div className="text-xs text-primary/40 font-mono tracking-[0.5em]">EST. 2026</div>
+              <div className="text-xs text-primary/40 font-mono tracking-[0.5em]">EST. 2024</div>
             </div>
           </div>
         </div>
