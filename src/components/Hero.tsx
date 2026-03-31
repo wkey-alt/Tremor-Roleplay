@@ -39,9 +39,19 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 border border-primary/30 rounded-full text-primary text-xs font-bold uppercase tracking-widest mb-8 glow-red">
-            <ShieldCheck size={14} />
-            Whitelist: {SERVER_DATA.whitelist.status}
+          <div className="flex flex-col items-center mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 border border-primary/30 rounded-full text-primary text-xs font-bold uppercase tracking-widest mb-4 glow-red">
+              <ShieldCheck size={14} />
+              Whitelist: {SERVER_DATA.whitelist.status}
+            </div>
+            <motion.div 
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="px-4 py-1 bg-white/5 border border-white/10 rounded-lg text-[10px] font-black uppercase tracking-[0.3em] text-white/40"
+            >
+              Tremor 2.0: Nová Éra Začíná
+            </motion.div>
           </div>
           
           <h1 className="text-7xl md:text-8xl lg:text-9xl mb-6 leading-[0.85] tracking-tighter">
@@ -49,7 +59,7 @@ export default function Hero() {
             <span className="block text-primary text-glow-red">Roleplay</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-400 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/70 mb-10 max-w-2xl mx-auto font-medium tracking-tight leading-relaxed">
             {SERVER_DATA.description}. Zažij nejrealističtější RP v unikátním prostředí s vlastními skripty.
           </p>
 

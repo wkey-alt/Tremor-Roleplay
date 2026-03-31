@@ -10,6 +10,7 @@ import Factions from "./components/Factions";
 import Rules from "./components/Rules";
 import JoinSteps from "./components/JoinSteps";
 import Community from "./components/Community";
+import Devlog from "./components/Devlog";
 import Whitelist from "./components/Whitelist";
 import Footer from "./components/Footer";
 import Button from "./components/Button";
@@ -30,6 +31,8 @@ export default function App() {
         <Whitelist />
         
         <Factions />
+        
+        <Devlog />
         
         <Rules />
         

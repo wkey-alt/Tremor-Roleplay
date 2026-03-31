@@ -17,9 +17,49 @@ export const NAV_LINKS = [
   { name: "O serveru", href: "#about" },
   { name: "Funkce", href: "#features" },
   { name: "Frakce", href: "#factions" },
+  { name: "Devlog", href: "#devlog" },
   { name: "Pravidla", href: "#rules" },
   { name: "Jak se připojit", href: "#join" },
   { name: "Komunita", href: "#community" }
+];
+
+export const DEVLOGS = [
+  {
+    date: "01.03.2026",
+    title: "TREMOR 2.0: NOVÁ ÉRA ZAČÍNÁ!",
+    highlight: "S obrovskou radostí oznamujeme, že brány Tremoru 2.0 jsou oficiálně otevřeny!",
+    changes: [
+      "Wipe: Kompletní wipe postav i majetku pro férový start a novou ekonomiku.",
+      "Unban Wave: Plošná unban wave – dáváme druhou šanci pro budování kvalitního RP.",
+      "Optimalizace: Server prošel brutální technickou očistou pro maximální stabilitu.",
+      "Nové Frakce: Rozšíření herních možností o nové organizace.",
+      "Realistické Detaily: Implementována trvanlivost jídla a pití.",
+      "Nové Interiéry: Desítky nových lokací a vylepšených interiérů.",
+      "Nelegální Činnost: Kompletní rework nelegálního systému a drog.",
+      "Dev Log: Podrobné technické detaily naleznete v kanálu 🔨〡dev-log."
+    ]
+  },
+  {
+    date: "29.03.2026",
+    title: "Velký Update Systémů",
+    changes: [
+      "Lepší loot při vykrádání domů.",
+      "Zastavárna nově dává čisté peníze a zvýšené výkupní ceny.",
+      "Odstraněn GTA crosshair (zaměřovač) pro lepší imerzi.",
+      "Nové tagy pro Admin Team.",
+      "Nový item: Skener otisků prstů pro LEO (policii).",
+      "Automatizované garáže (není nutné manuální přesouvání aut).",
+      "Přidány helipady u Benny's a na stanici SAHP.",
+      "Opravené vykrádání klasických bank.",
+      "Kompletní překlad všech itemů do češtiny.",
+      "Funkční sprchy na LEO stanicích a pláži (propojeno s Gym systémem).",
+      "Nové itemy pro Gym: Protein, Kreatin, Pre-workout, Testosteron.",
+      "Redesign a úprava Gym systému (suplementy, ceny, platnost permanentky 30 dní).",
+      "Nová 24/7 kavárna na pláži s nabídkou kávy a shaků.",
+      "Kreatin a pre-workout přidány do lékáren.",
+      "Sjednocení blipů pro brigádu Těžař."
+    ]
+  }
 ];
 
 export const FEATURES = [
