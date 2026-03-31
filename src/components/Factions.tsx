@@ -48,48 +48,27 @@ export default function Factions() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className={`relative rounded-3xl overflow-hidden group cursor-pointer border border-white/5 h-[450px] ${
+                className={`relative p-10 rounded-3xl border border-white/5 hover:border-primary/30 transition-all duration-500 group cursor-pointer flex flex-col justify-end h-[300px] ${
                   isLarge ? "md:col-span-3" : "md:col-span-2"
                 }`}
               >
-                {/* Background Image */}
-                <img
-                  src={faction.image || `https://picsum.photos/seed/${faction.name}/1200/800`}
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                  alt={faction.name}
-                  referrerPolicy="no-referrer"
-                />
-                
-                {/* Overlays */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
-                <div className="absolute inset-0 bg-primary/5 mix-blend-overlay group-hover:bg-primary/20 transition-colors duration-500" />
-                
-                {/* Scanline Overlay on Card */}
-                <div className="absolute inset-0 scanlines opacity-10 pointer-events-none" />
-
                 {/* Content */}
-                <div className="absolute inset-0 p-10 flex flex-col justify-end">
-                  <div className="overflow-hidden mb-4">
-                    <motion.div 
-                      initial={{ y: 20, opacity: 0 }}
-                      whileInView={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 0.2 + index * 0.1 }}
-                      className="w-16 h-1 bg-primary glow-red" 
-                    />
-                  </div>
-                  
-                  <h3 className="text-4xl font-black mb-4 tracking-tighter group-hover:text-primary transition-colors duration-300">
-                    {faction.name}
-                  </h3>
-                  
-                  <p className="text-gray-300 text-sm leading-relaxed max-w-md transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                    {faction.description}
-                  </p>
+                <div className="overflow-hidden mb-4">
+                  <motion.div 
+                    initial={{ y: 20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.2 + index * 0.1 }}
+                    className="w-16 h-1 bg-primary glow-red" 
+                  />
                 </div>
-
-                {/* Corner Accent */}
-                <div className="absolute top-6 right-6 w-10 h-10 border-t-2 border-r-2 border-primary/0 group-hover:border-primary/50 transition-all duration-500" />
-                <div className="absolute bottom-6 left-6 w-10 h-10 border-b-2 border-l-2 border-primary/0 group-hover:border-primary/50 transition-all duration-500" />
+                
+                <h3 className="text-4xl font-black mb-4 tracking-tighter group-hover:text-primary transition-colors duration-300">
+                  {faction.name}
+                </h3>
+                
+                <p className="text-gray-400 text-sm leading-relaxed max-w-md transition-all duration-500">
+                  {faction.description}
+                </p>
               </motion.div>
             );
           })}
